@@ -7,6 +7,18 @@ function countUp(n) {
         return countArray;
     }
 }
+console.log(countUp(5));
+
+// Результат: [ 1, 2, 3, 4, 5 ]
+function countUp(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countUp(n - 1);
+        countArray.push(n);
+        return countArray;
+    }
+}
 // console.log(countUp(5))
 
 
