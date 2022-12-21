@@ -7,7 +7,7 @@ function countUp(n) {
         return countArray;
     }
 }
-console.log(countUp(5))
+// console.log(countUp(5))
 
 /* ------------------------------------------------------------------ */
 
@@ -43,3 +43,41 @@ function doSum(one, two) {
 }
 
 // console.log(doSum(3, 4))
+
+/* ------------------------------------------------------------------ */
+
+const people = ['Jeka', 'Lena', 'Dima', 'Bob']
+
+/*for (let i = 0; i < people.length; i++) {
+    console.log(people[i])
+}*/
+
+/*function getPeople(arr) {
+    console.log(arr[0])
+    console.log(arr[1])
+    console.log(arr[2])
+    console.log(arr[3])
+}*/
+
+function getPeople(arr, index = 0) {
+    console.log(arr[index])
+    index++
+    if (index < people.length) {
+        getPeople(people, index)
+    }
+}
+
+// getPeople(people)
+
+/* ------------------------------------------------------------------ */
+
+let someNumber = 0
+
+function plus() {
+    someNumber++
+    console.log(someNumber)
+    if (someNumber === 10) return
+    plus()
+}
+
+plus()
