@@ -9,7 +9,7 @@ function countUp(n) {
 }
 console.log(countUp(5))
 
-
+/* ------------------------------------------------------------------ */
 
 function goUp(n) {
     const arr =[]
@@ -20,9 +20,9 @@ function goUp(n) {
 }
 // console.log(goUp(5))
 
+/* ------------------------------------------------------------------ */
 
-
-// ↓ Пример без рекурсии
+// Пример без рекурсии:
 function calcSum(numOne, numTwo) {
     let result = 1
     // умножаем result на numOne numTwo раз в цикле
@@ -33,9 +33,7 @@ function calcSum(numOne, numTwo) {
 }
 // console.log(calcSum(3, 4))
 
-
-
-// ↓ Пример с рекурсией
+// Пример с рекурсией:
 function doSum(one, two) {
     if (two === 1) {
         return one
