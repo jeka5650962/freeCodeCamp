@@ -42,4 +42,4 @@ function doSum(one, two) {
     }
 }
 
-console.log(doSum(3, 4))
+// console.log(doSum(3, 4))
