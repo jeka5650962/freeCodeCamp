@@ -1,5 +1,3 @@
-const square = (num) => {
-    return num * num
-}
+const square = (num) => num * num
 
-console.log(square(11))
+console.log(square(9))
