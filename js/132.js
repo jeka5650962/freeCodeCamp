@@ -1,17 +1,25 @@
-class Book {
-    constructor(author) {
-        this._author = author;
+// Only change code below this line
+class Thermostat {
+    constructor(fahrenheit) {
+        this._fahrenheit = fahrenheit
     }
+
     // getter
-    get writer() {
-        return this._author;
+    get temperature() {
+        return this._fahrenheit
     }
+
     // setter
-    set writer(updatedAuthor) {
-        this._author = updatedAuthor;
+    set temperature(celsius) {
+        this._fahrenheit = celsius * 9.0 / 5 + 32
     }
 }
-const novel = new Book('anonymous');
-console.log(novel.writer);
-novel.writer = 'newAuthor';
-console.log(novel.writer);
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+
+let temp = thermos.temperature; // 24.44 in Celsius
+
+thermos.temperature = 26;
+
+temp = thermos.temperature; // 26 in Celsius
