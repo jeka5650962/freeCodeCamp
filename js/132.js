@@ -1,17 +1,17 @@
 // Only change code below this line
 class Thermostat {
     constructor(fahrenheit) {
-        this._fahrenheit = fahrenheit
+        this.tempInCelsius = 5 / 9 * (fahrenheit - 32)
     }
 
     // getter
     get temperature() {
-        return this._fahrenheit
+        return this.tempInCelsius
     }
 
     // setter
-    set temperature(celsius) {
-        this._fahrenheit = celsius * 9.0 / 5 + 32
+    set temperature(newTemp) {
+        this.tempInCelsius = newTemp
     }
 }
 // Only change code above this line
