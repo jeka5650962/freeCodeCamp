@@ -1,3 +1,6 @@
-const square = (num) => num * num
+function helloWorld() {
+    let str = 'Hello World!'
+    console.log(str)
+}
 
-console.log(square(9))
+helloWorld()
