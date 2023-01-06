@@ -1,7 +1,5 @@
 const abbrevName = (name) => {
-    let tmp = name.split(' ')
-    console.log(tmp)
-    
+    return  name.split(' ').map(el => el[0].toUpperCase()).join('.')
 }
 
 console.log(abbrevName('patrick feeney'))
